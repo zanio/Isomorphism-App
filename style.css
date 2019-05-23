@@ -1,0 +1,107 @@
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgb(192, 217, 255);
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: rgb(192, 217, 255);
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: rgb(192, 217, 255);
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: rgb(192, 217, 255);
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+.pd{
+    padding: 10px
+}
+.text-align{
+    text-align: center;
+    
+}
+.sub-title{
+    color: #888;
+}
+h1{
+    color: rgb(99, 99, 121);
+    padding-top: 30px;
+}
+body div.wrapper{
+    width: 70%;
+    margin: 5% auto;
+    background-color: rgb(197, 186, 186);
+    padding-top: 20px;
+    -webkit-box-shadow: -2px 3px 54px -29px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 3px 54px -29px rgba(0,0,0,0.75);
+    box-shadow: -2px 3px 54px -29px rgba(0,0,0,0.75);
+    padding-bottom: 40px;
+}
+input{
+ display: block;
+ width: 50%;
+ background: rgb(99, 99, 121);
+ border: none;
+ border-bottom: 2px solid rgba(160, 185, 223, 0.658);
+ padding: 10px 10px;
+ margin: 40px auto;
+}
+input:focus{
+outline: none;
+}
+input[type]{
+ color: white;
+ font-size: 1rem;
+}
+
+button{
+    padding: 10px 10px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: rgba(128, 10, 26, 0.829);
+    color: white;
+}
+button:focus{
+    outline: none;
+}
+button:active{
+    background: rgba(128, 10, 26, 0.253);
+}
+.success{
+    background: rgb(218, 218, 218);
+    color: blue;
+    font-weight:600;
+}
+.error{
+    color: rgb(168, 19, 19);
+    font-weight: 600;
+   
+    
+}
+.result{
+    color: rgba(49, 110, 49, 0.733);
+    font-weight: 600;
+}
+
+@media(max-width:600px){
+     input[type]{
+        font-size: .6rem;
+       }
+       body input{ 
+        width: 70%;
+       }
+       button{
+        padding: 10px 10px;
+        font-size: .7rem; 
+    }
+    body div.wrapper{
+        width: 90%;
+        margin: 15% auto;
+    }  
+}
