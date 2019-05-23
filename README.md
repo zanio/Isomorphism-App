@@ -1,7 +1,7 @@
 # Isomorphics App
 Clone and Enjoy
 ### Algorithm in action:
-If you like algorithm then this repo would interest you to clone. It is a simple program that takes in to strings as parameter and map one to another . It returns true if it is and return false if it is not.
+If you like algorithm then this repo would interest you to clone. It is a simple program that takes in two strings as parameter and map one to another . It returns true if it is and return false if it is not.
 
 ### The Problem in details:
 Given two (dictionary) words as Strings, determine if they are isomorphic. Two words are called isomorphic
