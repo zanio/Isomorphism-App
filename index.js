@@ -45,8 +45,6 @@ const isomophicLogic = (str1,str2)=>{
       }
       
       console.log(HashMapObj)
-      input1.value = "";
-      input2.value="";
       return resultEl.innerHTML = `<span class="success pd">${true}</span>`
     }
 
