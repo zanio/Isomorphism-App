@@ -1,5 +1,10 @@
 # Isomorphics App
 Clone and Enjoy
+
+[Algorithm in action:](#Algorithm-in-action:)
+[The Problem in details:](#The-Problem-in-details:)
+[The Logic:](#The-Logic:)
+
 ### Algorithm in action:
 If you like algorithm then this repo would interest you to clone. It is a simple program that takes in two strings as parameter and map one to another . It returns true if it is and return false if it is not.
 
@@ -21,3 +26,4 @@ may map to the same letter, but a letter may map to itself.
 (5) If it exists then compare it with the string 2’s character
 
 ### Happy Coding!!!
+[view project on codepen.io](https://codepen.io/NodeDeWeb/pen/gJvzmx)
