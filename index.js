@@ -14,12 +14,10 @@ let elStr2 ;
 // Catch the values from input element on keyup even
 input1.addEventListener('keyup',()=>{
     elStr1 = input1.value;
-    console.log(elStr1)
 });
 
 input2.addEventListener('keyup',()=>{
     elStr2 = input2.value;
-    console.log(elStr2)
 });
 
 
@@ -45,8 +43,6 @@ const isomophicLogic = (str1,str2)=>{
            return resultEl.innerHTML = `<p class="red" >Both strings differ in mapping so therefore:</p><br><span class="success">${false}</span>`;
         }
       }
-      
-      console.log(HashMapObj)
       return resultEl.innerHTML = `<p  class="green" > Congrat, strings (${str1}, ${str2}) are isomorphic</p><br><span class="success">${true}</span>`
     }
 
