@@ -22,13 +22,17 @@ input2.addEventListener('keyup',()=>{
     console.log(elStr2)
 });
 
+
 // The ismophicLogic Function recieves two parameters
 
 const isomophicLogic = (str1,str2)=>{
 
+  str1 = str1.split(' ').join('');
+   str2 = str2.split(' ').join('')
+
     const str1Len = str1.length;
 
-      if(str1Len != str2.length) return resultEl.textContent = 'Error: strings not equal in length';
+      if(str1Len != str2.length) return resultEl.innerHTML = `<span class="red">Error: strings not equal in length, please check for empty space</span>`;
     
       const HashMapObj = {}
     
@@ -40,12 +44,12 @@ const isomophicLogic = (str1,str2)=>{
     
           console.log('Both strings differ in mapping at index ' + i);
           
-           return resultEl.innerHTML = `Both strings differ in mapping so therefore:<br><span class="success">${false}</span>`;
+           return resultEl.innerHTML = `<p class="red" >Both strings differ in mapping so therefore:</p><br><span class="success">${false}</span>`;
         }
       }
       
       console.log(HashMapObj)
-      return resultEl.innerHTML = `<span class="success pd">${true}</span>`
+      return resultEl.innerHTML = `<p  class="green" > Congrat, strings are isomorphic</p><br><span class="success">${true}</span>`
     }
 
 //Fire up the Event listener when the button is clicked and pass in the argument to the isomorphic function
@@ -60,7 +64,10 @@ const isomophicLogic = (str1,str2)=>{
             return errorEl.textContent = "Please Dont Clear the input before you submit"
         }
         else{
-            isomophicLogic(elStr1,elStr2);
-            errorEl.textContent = ""
+            
+                isomophicLogic(elStr1,elStr2);
+                errorEl.textContent = ""
+            
+            
         }
     })

@@ -78,13 +78,13 @@ button:active{
     color: rgba(30, 30, 245, 0.596);
     font-weight:600;
 }
-.error{
+.error,.red{
     color: rgb(168, 19, 19);
     font-weight: 600;
    
     
 }
-.result{
+.result,.green{
     color: rgba(49, 110, 49, 0.733);
     font-weight: 600;
 }
