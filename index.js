@@ -41,15 +41,13 @@ const isomophicLogic = (str1,str2)=>{
           HashMapObj[str1[i]] = str2[i]
         }
          else if( HashMapObj[str1[i]] !== str2[i]){
-    
-          console.log('Both strings differ in mapping at index ' + i);
           
            return resultEl.innerHTML = `<p class="red" >Both strings differ in mapping so therefore:</p><br><span class="success">${false}</span>`;
         }
       }
       
       console.log(HashMapObj)
-      return resultEl.innerHTML = `<p  class="green" > Congrat, strings are isomorphic</p><br><span class="success">${true}</span>`
+      return resultEl.innerHTML = `<p  class="green" > Congrat, strings (${str1}, ${str2}) are isomorphic</p><br><span class="success">${true}</span>`
     }
 
 //Fire up the Event listener when the button is clicked and pass in the argument to the isomorphic function
@@ -64,10 +62,7 @@ const isomophicLogic = (str1,str2)=>{
             return errorEl.textContent = "Please Dont Clear the input before you submit"
         }
         else{
-            
                 isomophicLogic(elStr1,elStr2);
                 errorEl.textContent = ""
-            
-            
         }
     })
